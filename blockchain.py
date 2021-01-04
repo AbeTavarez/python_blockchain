@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 
-blockchain = [1]
+blockchain = [[1]]
 
 
-def add_value(value):
-    blockchain.append([blockchain[-1], value])
+def add_value(transaction_amount):
+    blockchain.append([blockchain[-1], transaction_amount])
     print(blockchain)
 
 
