@@ -29,7 +29,14 @@ add_value(tx_amount)
 tx_amount = float(input('Enter transaction amount: '))
 add_value(last_transaction=get_last_bc_value(), transaction_amount=tx_amount)
 
-tx_amount = float(input('Enter transaction amount: '))
-add_value(tx_amount, get_last_bc_value())
 
-print(blockchain)
+while True:
+    tx_amount = float(input('Enter transaction amount: '))
+    add_value(tx_amount, get_last_bc_value())
+
+# Output the blockchain list to the console
+for block in blockchain:
+    print('Outputting Block')
+    print(block)
+
+print('Done!')
