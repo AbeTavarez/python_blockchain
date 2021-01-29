@@ -25,7 +25,7 @@ def get_transaction_value():
 
 
 def get_user_choice():
-    user_input = input('Your choise: ')
+    user_input = input('Your choice: ')
     return user_input
 
 
@@ -37,6 +37,7 @@ while True:
     print('Please choose')
     print('1: Add a new transaction value')
     print('2: Output the blockchain blocks')
+    user_choice = get_user_choice()
     # gets user input amoung
     tx_amount = float(input('Enter transaction amount: '))
     add_value(tx_amount, get_last_bc_value())
