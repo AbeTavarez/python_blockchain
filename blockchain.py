@@ -38,9 +38,9 @@ while True:
     print('1: Add a new transaction value')
     print('2: Output the blockchain blocks')
     user_choice = get_user_choice()
-    # gets user input amoung
-    tx_amount = float(input('Enter transaction amount: '))
-    add_value(tx_amount, get_last_bc_value())
+    if user_choice == '1':
+        tx_amount = get_transaction_value()
+        add_value(tx_amount, get_last_bc_value())
 
     # Output the blockchain list to the console
     for block in blockchain:
