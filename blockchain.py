@@ -29,6 +29,13 @@ def get_user_choice():
     return user_input
 
 
+def print_blockchain_elements():
+  # Output the blockchain list to the console
+    for block in blockchain:
+        print('Outputting Block')
+        print(block)
+
+
 tx_amount = get_transaction_value()
 add_value(tx_amount)
 
@@ -41,10 +48,7 @@ while True:
     if user_choice == '1':
         tx_amount = get_transaction_value()
         add_value(tx_amount, get_last_bc_value())
-
-    # Output the blockchain list to the console
-    for block in blockchain:
-        print('Outputting Block')
-        print(block)
+    else:
+        print_blockchain_elements()
 
 print('Done!')
