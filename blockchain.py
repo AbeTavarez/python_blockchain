@@ -35,6 +35,8 @@ def print_blockchain_elements():
         print('Outputting Block')
         print(block)
 
+#* Main ####################
+
 
 tx_amount = get_transaction_value()
 add_value(tx_amount)
