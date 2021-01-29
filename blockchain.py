@@ -18,12 +18,18 @@ def add_value(transaction_amount, last_transaction=[1]):
     blockchain.append([last_transaction, transaction_amount])
 
 
-def get_user_input():
+def get_transaction_value():
     """ Returns the input of the user (a new transaction amount) as a float. """
-    return float(input('Enter transaction amount: '))
+    user_input = float(input('Enter transaction amount: '))
+    return user_input
 
 
-tx_amount = get_user_input()
+def get_user_choice():
+    user_input = input('Your choise: ')
+    return user_input
+
+
+tx_amount = get_transaction_value()
 add_value(tx_amount)
 
 
