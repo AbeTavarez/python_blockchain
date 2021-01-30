@@ -6,6 +6,8 @@ blockchain = []
 
 def get_last_bc_value():
     """ Returns last value on the blockchain """
+    if len(blockchain) < 1:
+        return None
     return blockchain[-1]
 
 
