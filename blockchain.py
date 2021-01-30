@@ -22,7 +22,7 @@ def add_value(transaction_amount, last_transaction=[1]):
 
 def get_transaction_value():
     """ Returns the input of the user (a new transaction amount) as a float. """
-    user_input = input('Enter transaction amount: ')
+    user_input = float(input('Enter transaction amount: '))
     return user_input
 
 
