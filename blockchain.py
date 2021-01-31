@@ -44,11 +44,14 @@ def verify_chain():
     block_index = 0
     is_valid = True
     for block in blockchain:
-        if block[0] == blockchain[block_index - 1]:
-            is_valid = True
-        else:
-            is_valid = False
-            break
+        if block_index == 0:
+            block_index += 1
+            if block[0] == blockchain[block_index - 1]:
+                print(block)
+                is_valid = True
+            else:
+                is_valid = False
+                break
     return is_valid
 
 #* Main ####################
