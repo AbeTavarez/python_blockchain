@@ -73,6 +73,7 @@ while True:
         break
     else:
         print('Input was invalid, please pick a value from the list!')
+    verify_chain()
     print('Choice registred!')
 
 print('Done!')
