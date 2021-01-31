@@ -39,6 +39,18 @@ def print_blockchain_elements():
         print('Outputting Block')
         print(block)
 
+
+def verify_chain():
+    block_index = 0
+    is_valid = True
+    for block in blockchain:
+        if block[0] == blockchain[block_index - 1]:
+            is_valid = True
+        else:
+            is_valid = False
+            break
+    return is_valid
+
 #* Main ####################
 
 
